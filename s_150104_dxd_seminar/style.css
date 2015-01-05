@@ -14,7 +14,7 @@ h1 {
     */
     /*
 	font-family는 해당 요소에서 사용할 폰트를 지정한다.
-	지정하는 각 폰트 이름은 따옴표(') 사이에 입력하며, 폰트의 구분을 따옴표(,)로 한다.
+	지정하는 각 폰트 이름은 따옴표(') 사이에 입력하며, 폰트의 구분을 쉼표(,)로 한다.
         사용자가 사용하는 OS(맥은 Machintosh, 대부분의 PC는 Windows, 간혹 Linux)에 해당하는 폰트가 없다면, 뒤로 넘어가서 체크한다.
 	예를 들어, windows에는 'helvetica neue' 폰트와 'APPLE SD Gothic Neo'폰트가 없다.
 	이 경우에는 windows에 포함되어있는 폰트인 'malgun gothic'으로 폰트를 보여주게 된다.
