@@ -9,12 +9,12 @@ h1 {
     font-family: 'helvetica neue', 'APPLE SD Gothic Neo', 'malgun gothic', sans-serif;
     /*
 	속성명 (font-family)과 속성값('helvetica neue', 'APPLE SD Gothic Neo', 'malgun gothic', sans-serif) 사이에 띄어쓰기는 해주어도 되고 안해주어도 된다.
-	콜롬(:)이 있어야 한다는 것만 늘 기억하자.
+	콜론(:)이 있어야 한다는 것만 늘 기억하자.
 	속성명과 속성값을 모두 기입한 후에는 반드시 세미콜론(;)을 작성해여야 한다.
     */
     /*
 	font-family는 해당 요소에서 사용할 폰트를 지정한다.
-	지정하는 각 폰트 이름은 따옴표(') 사이에 입력하며, 폰트의 구분을 쉼표(,)로 한다.
+	지정하는 각 폰트 이름은 작은 따옴표(') 사이에 입력하며, 폰트의 구분을 쉼표(,)로 한다.
         사용자가 사용하는 OS(맥은 Machintosh, 대부분의 PC는 Windows, 간혹 Linux)에 해당하는 폰트가 없다면, 뒤로 넘어가서 체크한다.
 	예를 들어, windows에는 'helvetica neue' 폰트와 'APPLE SD Gothic Neo'폰트가 없다.
 	이 경우에는 windows에 포함되어있는 폰트인 'malgun gothic'으로 폰트를 보여주게 된다.
