@@ -1,0 +1,106 @@
+h1 {
+/*
+   CSS는 selector(h1), 여는 중괄호({), 닫는 중괄호(})로 구성한다.
+   selector안의 h1은 현재 에제에서 사용하는 것이 h1이고, 실제 사용시 여러가지를 사용할 수 있다.
+   예를 들어 지금 html파일에 있는 요소가, <html>, <body>, <h1>, <p>, <abbr>, <a>이고, 이 각각에 스타일을 지정하는 것이 가능한다.
+   <head>안에 있는 요소들에는 CSS로 스타일을 주는 것이 불가능하기 때문에 CSS에서 설명을 하지 않았다.
+   이는 아래로 이어지는 코드를 참고하도록 하자.
+*/
+    font-family: 'helvetica neue', 'APPLE SD Gothic Neo', 'malgun gothic', sans-serif;
+    /*
+	속성명 (font-family)과 속성값('helvetica neue', 'APPLE SD Gothic Neo', 'malgun gothic', sans-serif) 사이에 띄어쓰기는 해주어도 되고 안해주어도 된다.
+	콜롬(:)이 있어야 한다는 것만 늘 기억하자.
+	속성명과 속성값을 모두 기입한 후에는 반드시 세미콜론(;)을 작성해여야 한다.
+    */
+    /*
+	font-family는 해당 요소에서 사용할 폰트를 지정한다.
+	지정하는 각 폰트 이름은 따옴표(') 사이에 입력하며, 폰트의 구분을 따옴표(,)로 한다.
+        사용자가 사용하는 OS(맥은 Machintosh, 대부분의 PC는 Windows, 간혹 Linux)에 해당하는 폰트가 없다면, 뒤로 넘어가서 체크한다.
+	예를 들어, windows에는 'helvetica neue' 폰트와 'APPLE SD Gothic Neo'폰트가 없다.
+	이 경우에는 windows에 포함되어있는 폰트인 'malgun gothic'으로 폰트를 보여주게 된다.
+	APPLE SD Gothic Neo는 한국엉와 영문을 둘 다 표현하기 때문에, 위 코드와 같이 영문 폰트를 먼저 작성하고 한글 폰트를 작성하게 되면, 영문은 helvetica neue 한글은 APPLE SD Gothic neo로 보여지게 된다.
+	sans-serif는 고딕체를 의미하는 고유명사이다.
+	명조체를 보여주고 싶다면 serif를 가장 마지막에 지정하면 된다.
+	OS별로 사용하는 기본 폰트는 아래에 써져 있다.
+	가장 이상적인 셋은 위의 코드이다.
+    */
+    font-weight: 400;
+    /*
+	font-weight는 폰트의 굵기를 표현한다.
+	폰트 굵기는 100부터 900까지로, 100단위로 올라간다.
+	즉 단위는 100,200,300,400,500,600,700,800,900이다.
+	일반적으로 100이 얇은 폰트, 400이 보통, 700이 굵은 폰트이다.
+	아래는 OS별 기본 폰트가 지원하는 굵기 현황이다. (사이트 : http://techhtml.org/lab/fonts/)
+	작업할 때 참고하도록 하자.
+	[Windows]
+	- Dotum (돋움)(다른 폰트를 지정하지 않고, sans-serif로 할 경우 기본 폰트)
+	  Normal : 400
+	  Bold : 700
+	- Gulim (굴림)
+	  Normal : 400
+	  Bold : 700
+	- Malgun Gothic (맑은 고딕)
+	  Normal : 400
+	  Bold : 700
+	[Mac]
+	- APPLE SD GOTHIC NEO (애플 SD 고딕 네오)(다른 폰트를 지정하지 않고, sans-serif로 할 경우 기본 폰트)
+	  Thin : 100
+	  UltraLight : 200
+	  Light : 300
+	  Regular : 400 (Default)
+	  Medium : 500
+	  SemiBold : 600
+	  Bold : 700
+	  Heavy : 800
+	- Helvetica Neue (헬베티카 뉴)
+	  UltraLight : 100
+	  Light : 300
+	  Regular : 400
+	  Medium : 500
+	  Bold : 700
+    */
+    font-size: 28px;
+    /*
+	font-size는 글자의 크기를 지정하는 CSS 속성이다.
+	font-size등을 지정할 때는 반드시 px등을 명시해야한다.
+	주로 쓰는 단위가 몇가지 있다. 2번째 수업에서 상세히 다루자
+    */
+    line-height: 32px;
+    /*
+	line-height는 행간을 의미한다.
+	기본 값은 브라우저별로 다르기 때문에 font-size를 지정해줬다면 line-height를 항상 함께 사용하도록 하자.
+	이 경우는 단위가 여러가지가 있지만, 기본적인 단위는 역시 px을 주로 사용한다.
+    */
+    color: #555;
+    /*
+	color 속성은 글자의 색상을 지정한다.
+	해쉬코드(#555)값이나 rgb(0,0,0) 혹은 rgba(0,0,0,1), 혹은 예약어(black, white) 등을 사용할 수 있다.
+	rgb는 아시는 바와 같이 Red, Green, Blue이며, a는 alpha값이다.
+	alpha값은 0에서 1까지의 사이로 100% 기준이고, 0.1은 opacity : 10%이다. 즉 0.01은 opacity:1%라 생각하면 된다.
+	이는 모든 색상 관련된 코드에서 동일하게 사용할 수 있다.
+	* 최근에는 hsl, hsla도 지원한다. hsl은 아는 바와 같이 (hue-saturation-lightness)이다.
+    */
+    font-size: 32px;
+    /*
+	css는 위에서 아래로 읽는 방식이기 때문에, 만약 같은 속성을 아래에 다시 작성했을 경우 위의 속성이 묻힌다.
+	즉 h1의 font-size는 32px이 된다.
+    */
+}
+html {/* html 요소에 스타일을 지정한다 */
+
+}
+body {/* body 요소에 스타일을 지정한다 */
+
+}
+h1 {/* h1 요소에 스타일을 지정한다 */
+
+}
+p {/* p 요소에 스타일을 지정한다 */
+
+}
+abbr {/* abbr 요소에 스타일을 지정한다 */
+
+}
+a {/* a 요소에 스타일을 지정한다 */
+
+}
